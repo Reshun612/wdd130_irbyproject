@@ -1,0 +1,34 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#logo {
+    grid-column: 1/2;
+}
+
+#suit_logo {
+    width: 60px;
+    height: 120px;
+}
+
+#nav {
+    grid-column: 2/5;
+}
+
+#nav_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#home_nav {
+    grid-column: 1/2;
+}
+
+#fit_nav {
+    grid-column: 2/3;
+}
+
+contact_nav {
+    grid-column: 3/4;
+}

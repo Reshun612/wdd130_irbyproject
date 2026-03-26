@@ -2,6 +2,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 4fr;
     border: 2px solid black;
+    background-color: #F5F5F5;
 }
 
 #logo {
@@ -36,6 +37,11 @@ li {
     font-size: 20px;
 }
 
+li:hover {
+    background-color: #5F9EA0;
+    font-size: 20px;
+}
+
 #home_nav {
     grid-column: 1/2;
     justify-content: center;
@@ -47,4 +53,10 @@ li {
 
 #contact_nav {
     grid-column: 3/4;
+}
+
+footer {
+    border: 2px solid black;
+    background-color: #1C2A39;
+    color: #F5F5F5;
 }

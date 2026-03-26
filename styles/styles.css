@@ -1,6 +1,7 @@
 header {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    border: 2px solid black;
 }
 
 #logo {
@@ -8,27 +9,42 @@ header {
 }
 
 #suit_logo {
-    width: 60px;
+    width: 240px;
     height: 120px;
 }
 
 #nav {
     grid-column: 2/5;
+    background-color: #F5F5F5;
 }
 
 #nav_list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: center;
+    grid-gap: 1%;   
+    align-items: center; 
+}
+
+li {
+    border: 2px solid black;
+    background-color: #1C2A39;
+    color: #F5F5F5;
+    padding: 10%;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
 }
 
 #home_nav {
     grid-column: 1/2;
+    justify-content: center;
 }
 
 #fit_nav {
     grid-column: 2/3;
 }
 
-contact_nav {
+#contact_nav {
     grid-column: 3/4;
 }

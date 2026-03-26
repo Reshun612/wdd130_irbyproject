@@ -17,34 +17,28 @@ header {
 #nav {
     grid-column: 2/5;
     background-color: #F5F5F5;
-}
-
-#nav_list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    list-style: none;
-    justify-content: center;
-    grid-gap: 1%;   
-    align-items: center; 
 }
 
-li {
-    border: 2px solid black;
+.links {
     background-color: #1C2A39;
     color: #F5F5F5;
     padding: 10%;
     font-family: "Playfair Display", serif;
-    font-size: 20px;
+    font-size: 22px;
+    text-decoration: none; /* Removes blue underline from links */
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-li:hover {
-    background-color: #5F9EA0;
-    font-size: 20px;
+.links:hover {
+    border-bottom: #5F9EA0 solid 5px;
+    border-top: #5F9EA0 solid 5px;
 }
 
 #home_nav {
     grid-column: 1/2;
-    justify-content: center;
 }
 
 #fit_nav {
@@ -55,8 +49,20 @@ li:hover {
     grid-column: 3/4;
 }
 
+#hero_image {
+    width: 80%;
+    height: 40%;
+    background-image: url("images/hero_image.png");
+    background-color: #1C2A39; /* Use if image does not show up */
+}
+
 footer {
     border: 2px solid black;
     background-color: #1C2A39;
     color: #F5F5F5;
 }
+
+/*
+https://www.w3schools.com/cssref/pr_background-image.php
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+*/

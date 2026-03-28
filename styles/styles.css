@@ -1,3 +1,14 @@
+/*
+Author: Joshua Fuller
+Class: WDD 130
+Date: March 28, 2026
+Sources:
+https://www.w3schools.com/cssref/pr_background-image.php
+https://www.w3schools.com/howto/howto_css_hero_image.asp
+https://www.w3schools.com/cssref/pr_text_text-decoration.php
+https://www.w3schools.com/cssref/pr_background-position.php
+*/
+
 html {
     background-color: 11111;
 }
@@ -49,6 +60,7 @@ header {
 
 #home_nav {
     grid-column: 1/2;
+    padding: 8%;
 }
 
 #fit_nav {
@@ -57,32 +69,36 @@ header {
 
 #contact_nav {
     grid-column: 3/4;
-    padding: 9%;
+    padding: 8%;
 }
 
-/* Hero */
+/* Main Title */
 /********************************************************************/
 #main_heading {
-    position: relative; top: 200px;
+    position: relative; top: 380px;
     font-size: 40px;
     color: #111111;
     z-index: 1;
     font-family: "Playfair Display", serif;
+    justify-self: center;
 }
 
+/* Hero */
+/********************************************************************/
 #hero_section {
     height: 800px;
     width: 100%;
     background-image: url("../images/hero_image.png");
     background-color: #111111; /* Use if image does not show up */
-    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 70%;
     background-attachment: fixed; /* Image does not scroll with the rest of the page */
     background-repeat: no-repeat;
 }
 
 #hero_article {
     background-color: #F5F5F5;
-    height: 250px;
+    height: 40%;
     position: relative; top: 500px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -112,13 +128,15 @@ header {
     background-image: url("../images/craftsmanship.png");
     background-color: #111111; /* Use if image does not show up */
     background-position: center;
+    background-position-x: 50%;
+    background-position-y: 95%;
     background-attachment: fixed; /* Image does not scroll with the rest of the page */
     background-repeat: no-repeat;
 }
 
 #craftsman_article {
     background-color: #F5F5F5;
-    height: 250px;
+    height: 45%;
     position: relative; top: 700px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -148,13 +166,15 @@ header {
     background-image: url("../images/featured.png");
     background-color: #111111; /* Use if image does not show up */
     background-position: center;
+    background-position-x: 50%;
+    background-position-y: 95%;
     background-attachment: fixed; /* Image does not scroll with the rest of the page */
     background-repeat: no-repeat;
 }
 
 #featured_article {
     background-color: #F5F5F5;
-    height: 200px;
+    height: 25%;
     position: relative; top: 700px;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -178,44 +198,96 @@ header {
 
 /* Explore */
 /********************************************************************/
-#explore_section {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
 .explore {
     font-family: "Playfair Display", serif;
-    font-size: 20px;
     color:#111111;
-    height: 400px;
 }
 
-.explore_image {
-    width: 100px;
+#explore_section {
+    position: relative; top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 20px;
 }
 
-.suits {
+#explore_title {
+    font-size: 30px;
+    justify-self: center;
+    grid-column: 3/6;
+    grid-row: 1/2;
+}
+
+.explore_article {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    background-color:#1C2A39;
+    color: #F5F5F5;
+    border:#111111 2px solid;
+    border-radius: 10%;
+    height: 65%;
+    width: 160%;
+    text-decoration: none;
+}
+
+.explore_article:hover {
+    font-size: 18px;
+    text-decoration: overline #5F9EA0 2px;
+}
+/* Suits */
+/********************************************************************/
+
+#suits_article {
     grid-column: 2/3;
 }
 
-#suits_link {
-    grid-column: 2/3;
+#suits_title {
+    justify-self: center;
+    grid-row: 1/2;
 }
 
-.slacks {
+#suits_image {
+    justify-self: center;
+    width: 80%;
+    border: 2px solid #111111;
+}
+
+/* Slacks */
+/********************************************************************/
+
+#slacks_article {
     grid-column: 4/5;
 }
 
-#slacks_link {
-    grid-column: 4/5;
+#slacks_title {
+    justify-self: center;
+    grid-row: 1/2;
 }
 
-.ties {
+#slacks_image {
+    justify-self: center;
+    width: 80%;
+    border: 2px solid #111111;
+}
+
+/* Ties */
+/********************************************************************/
+
+#ties_article {
     grid-column: 6/7;
 }
 
-#ties_link {
-    grid-column: 6/7;
+#ties_title {
+    justify-self: center;
+    grid-row: 1/2;
+}
+
+#ties_image {
+    justify-self: center;
+    width: 80%;
+    border: 2px solid #111111;
 }
 
 /* Footer */
@@ -223,9 +295,10 @@ header {
 footer {
     background-color: #1C2A39;
     color: #F5F5F5;
+    position: relative; top: 350px;
+    height: 80px;
 }
 
-/*
-https://www.w3schools.com/cssref/pr_background-image.php
-https://www.w3schools.com/howto/howto_css_hero_image.asp
-*/
+.footer {
+    justify-self: center;
+}
